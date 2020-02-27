@@ -1,0 +1,14 @@
+{
+  "name": "package-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --require ts-node/register './test/**/*.spec.ts'"
+  },
+  "author": "",
+  "license": "ISC"
+}

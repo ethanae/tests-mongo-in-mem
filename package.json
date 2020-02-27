@@ -1,0 +1,30 @@
+{
+  "name": "tests-mongo-in-mem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node -e \"!process.env.npm_config_user_agent.startsWith('pnpm/') && !console.log('Use \\`npx pnpm install\\` to install dependencies in this repository\\n') && process.exit(1)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanae/tests-mongo-in-mem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethanae/tests-mongo-in-mem/issues"
+  },
+  "homepage": "https://github.com/ethanae/tests-mongo-in-mem#readme",
+  "devDependencies": {
+    "@types/mongoose": "3.8.38",
+    "@types/node": "^13.7.6",
+    "mocha": "^7.1.0",
+    "mongodb-memory-server": "^6.2.4",
+    "ts-node": "^8.6.2",
+    "typescript": "3.3.x"
+  },
+  "dependencies": {
+    "mongoose": "3.8.38"
+  }
+}
