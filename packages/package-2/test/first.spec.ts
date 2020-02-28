@@ -1,7 +1,7 @@
+import { connect } from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import mongoose from 'mongoose';
-
 const log = console.log;
+
 const mongod = new MongoMemoryServer();
 
 (async () => {
@@ -17,7 +17,7 @@ const mongod = new MongoMemoryServer();
     DB_NAME: ${dbName}
   `);
 
-  mongoose.connect(uri, {}, err => {
+  connect(uri, {}, err => {
     log(err)
   });
 })()

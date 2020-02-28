@@ -1,7 +1,7 @@
-import { MongoMemoryServer } from 'mongodb-memory-server';
 import { connect } from 'mongoose';
-
+import { MongoMemoryServer } from 'mongodb-memory-server';
 const log = console.log;
+
 const mongod = new MongoMemoryServer();
 
 (async () => {

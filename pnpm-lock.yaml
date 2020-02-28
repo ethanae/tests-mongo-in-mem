@@ -6,14 +6,16 @@ importers:
       '@types/mongoose': 3.8.38
       '@types/node': 13.7.6
       mocha: 7.1.0
-      mongodb-memory-server: 6.2.4
+      mongodb-memory-server: 6.3.0
+      mongodb-memory-server-core: 6.3.0
       ts-node: 8.6.2_typescript@3.3.4000
       typescript: 3.3.4000
     specifiers:
       '@types/mongoose': 3.8.38
       '@types/node': ^13.7.6
       mocha: ^7.1.0
-      mongodb-memory-server: ^6.2.4
+      mongodb-memory-server: ^6.3.0
+      mongodb-memory-server-core: ^6.3.0
       mongoose: 3.8.38
       ts-node: ^8.6.2
       typescript: 3.3.x
@@ -29,6 +31,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MtN1pDYdI6D6QFDzy39Q+6c9rl2o/xN7aWGe6oZuzqq5N6+YuwFsWiEAv3dNzvzN9YzU+itpN8lBzFpphQKLAw==
+  /@types/debug/4.1.5:
+    dev: true
+    resolution:
+      integrity: sha512-Q1y515GcOdTHgagaVFhHnIFQ38ygs/kmxdNpvpou+raI9UO3YZcHDngBSYKQklcKlvA7iuQlmIKbzvmxcOE9CQ==
   /@types/decompress/4.2.3:
     dependencies:
       '@types/node': 13.7.6
@@ -913,9 +919,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-MymHK8UkU0K15Q/zX7uflZgVoRWiTjy0fXE/QjKts6mowUvGxOdPhZ2qj3b0iZdUrNZlW9LAIMFHB4IW+2b3EQ==
-  /mongodb-memory-server-core/6.2.4:
+  /mongodb-memory-server-core/6.3.0:
     dependencies:
       '@types/cross-spawn': 6.0.1
+      '@types/debug': 4.1.5
       '@types/decompress': 4.2.3
       '@types/dedent': 0.7.0
       '@types/find-cache-dir': 2.0.1
@@ -946,14 +953,14 @@ packages:
     optionalDependencies:
       mongodb: 3.5.4
     resolution:
-      integrity: sha512-W64vmFmfChl/0WVi5Kwg5AhWcWqIaEHZnhU+WZ1Outs12uraUeagdoRucDug65GEL1grUpuSHuz1tBRds+o2IQ==
-  /mongodb-memory-server/6.2.4:
+      integrity: sha512-Ia1xUxbz781GlKSHSIEieECwMUeYxUYi/fpVqPKfhF/Ta5ncLrsN62GFCshjcgLuHyjpEXXBr7Atz2Gl+5AvJA==
+  /mongodb-memory-server/6.3.0:
     dependencies:
-      mongodb-memory-server-core: 6.2.4
+      mongodb-memory-server-core: 6.3.0
     dev: true
     requiresBuild: true
     resolution:
-      integrity: sha512-QWm1oFsc6DBJFE8JZt/bubOnrpbyODC4sAD+MHSAaU51wZwL7J17tr7gtX3ChkdwI9jmTFGASySM0XsKSY3qSA==
+      integrity: sha512-+X6/jSum+lGO8UqX+EzhhwnBrMIcITVlHtxq7Y/yDWNerN0bXS+R/hil/fXGxHX/RIz1CwjmbxZDq1IZuLVUKw==
   /mongodb/1.4.38:
     dependencies:
       bson: 0.2.22
