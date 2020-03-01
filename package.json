@@ -17,20 +17,24 @@
   },
   "homepage": "https://github.com/ethanae/tests-mongo-in-mem#readme",
   "devDependencies": {
-    "@types/mongoose": "3.8.38",
+    "@types/chai": "^4.2.9",
+    "@types/mocha": "^7.0.1",
+    "@types/mongoose": "^5.7.3",
     "@types/node": "^13.7.6",
+    "chai": "^4.2.0",
     "mocha": "^7.1.0",
-    "mongodb-memory-server": "^6.3.0",
-    "mongodb-memory-server-core": "^6.3.0",
+    "mongodb-memory-server": "^6.2.4",
+    "mongodb-memory-server-core": "^6.2.4",
     "ts-node": "^8.6.2",
     "typescript": "3.3.x"
   },
   "dependencies": {
-    "mongoose": "3.8.38"
+    "mongoose": "4.x.x"
   },
   "config": {
     "mongodbMemoryServer": {
-      "systemBinary": "/node_modules/.cache/mongodb-memory-server/mongodb-binaries/4.0.3/mongod"
+      "disablePostinstall": "0",
+      "version": "4.0.3"
     }
   }
 }
