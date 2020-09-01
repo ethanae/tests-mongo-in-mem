@@ -29,7 +29,7 @@
     "typescript": "3.3.x"
   },
   "dependencies": {
-    "mongoose": "4.x.x"
+    "mongoose": "5.x.x"
   },
   "config": {
     "mongodbMemoryServer": {
